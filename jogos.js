@@ -15,7 +15,7 @@ const modelo = () => {
         const sequencia = prompt("Qual é a sequência do jogo? Digite 0 se não houver uma Sequencia! ") - 1;
     }
 
-    if (nome != "" && ano_lancamento >= 1962 && ano_lancamento <= 2024 && duracao > 0 && preco == 0 && estudio != "" && ((sequencia >= 0 && sequencia < jogos.length) || jogos.length == 0)) {
+    if (nome != "" && ano_lancamento >= 1962 && ano_lancamento <= 2024 && duracao > 0 && preco == 0 && estudio != "" && ((sequencia >= -1 && sequencia < jogos.length) || jogos.length == 0)) {
         return {
             nome,
             ano_lancamento,
