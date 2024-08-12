@@ -2,7 +2,6 @@ const prompt = require("prompt-sync")();
 
 const jogos = [];
 
-const validarIndice = (indice) => indice >= 0 && indice < jogos.length;
 
 const modelo = () => {
     const nome = prompt("Nome do jogo: ");
